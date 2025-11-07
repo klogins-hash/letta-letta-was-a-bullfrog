@@ -1,0 +1,89 @@
+# Railway Ignore File
+# Files and directories that should not be uploaded to Railway
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# Test files
+tests/
+test/
+*.test.js
+*.spec.js
+pytest_cache/
+.pytest_cache/
+
+# Documentation
+docs/
+*.md
+!README.md
+fern/
+
+# Local development
+.env.local
+.env.development
+.env.test
+*.local
+.persist/
+db/
+
+# Docker compose files (Railway uses Dockerfile directly)
+compose.yaml
+dev-compose.yaml
+development.compose.yml
+docker-compose-vllm.yaml
+docker-compose*.yml
+docker-compose*.yaml
+
+# Examples and demos
+examples/
+demos/
+
+# CI/CD
+.circleci/
+.travis.yml
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+*.swp
+*.swo
+*~
+
+# Large binary files
+*.tar.gz
+*.zip
+*.rar
+
+# Certificates (should be managed via Railway secrets)
+certs/
+
+# OpenTelemetry configs (will be in the image)
+# otel/
+
+# Package locks (using uv.lock instead)
+package-lock.json
+
+# Sandbox
+sandbox/
