@@ -14,10 +14,7 @@ restartPolicyMaxRetries = 10
 
 # Environment variables that Railway will use
 # Note: Set sensitive values in Railway dashboard, not here
-[[deploy.environmentVariables]]
-name = "PORT"
-value = "8283"
-
+# Railway automatically sets PORT - we'll use it directly
 [[deploy.environmentVariables]]
 name = "HOST"
 value = "0.0.0.0"
